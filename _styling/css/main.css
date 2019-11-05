@@ -197,3 +197,11 @@ footer{
   width:40%;
   visibility: hidden;
 }
+
+#hobbys {
+  display:block;
+  top:60%;
+  left:47%;
+  position: absolute;
+   z-index:999;
+}

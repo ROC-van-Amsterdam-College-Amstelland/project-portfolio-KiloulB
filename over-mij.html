@@ -13,14 +13,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script type="text/javascript" href="_styling/active.js" ></script> -->
 
-
+  <script>
+  $(document).ready(function(){
+    document.getElementById("tekst").style.display = "none";
+    $("#hobbys").click(function(){
+      $("h1").fadeOut(300);
+      $("#hobbys").fadeOut(500);
+      $("#menu").fadeIn();
+      $("#tekst").fadeIn();
+    });
+  });
+  </script>
 </head>
 <body>
 
 
     <h1><b>Over Mij</b><br><p>Mijn naam is Bilal Kiloul, ik ben 16 jaar oud en ik ben een Front-End Developer<br> dat woont in Amsterdam.
     Momenteel zit ik op het ROC Amstelland, ik doe de opleiding<br> Applicatieontwikkelaar. En ik heb momenteel meerdere websites gemaakt, <br> die websites kun je vinden door boven op 'Projecten' te klikken of door <a href="projecten.html">hier te klikken </a></p></h1>
-
+<div id="tekst"><b>Mijn Hobby's</b><p style="font-size:14px;"><br>Mijn hobby's zijn voetballen, kickboksen & coderen. Als ik iets niet begrijp<br> met coderen gebruik ik onder andere stackoverflow.<br>Klik <a href="https://stackoverflow.com">HIER</a> om naar Stackoverflow te gaan.</p></div>
 
 
   <video autoplay loop id="video-background" muted plays-inline>
@@ -53,6 +63,7 @@
       </ul>
       </nav>
     </header>
+    <button id="hobbys" class="btn btn-primary"><b>Mijn hobby's</b></button>
     <center>
     <img src="_styling/img/foto.jfif" class="plaatje"></center>
 <footer>
