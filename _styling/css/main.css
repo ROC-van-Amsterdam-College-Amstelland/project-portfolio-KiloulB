@@ -145,14 +145,17 @@ footer{
   left:70%;
   height:350px;
   border-radius: 150px;
-  opacity: 0.6;
-  transition: all 1s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+   -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+       animation: fadein 2s;
 }
 
 #website1 {
   display:block;
   top:35%;
-  left:42%;
+  left:43%;
   position: absolute;
    z-index:999;
 }
@@ -160,7 +163,7 @@ footer{
 #website2 {
   display:block;
   top:35%;
-  left:47%;
+  left:52%;
   position: absolute;
    z-index:999;
 }
@@ -173,10 +176,24 @@ footer{
    z-index:999;
 }
 
-#website1plaatje {
-  background-image: url(/img/website1.png);
-  background-size:800px;
+#websiteplaatje1 {
+  position: relative;
+  left:30%;
+  margin-top:20%;
   width:40%;
-  height:410px;
+  visibility: hidden;
+}
+#websiteplaatje2 {
+  position: relative;
+  left:-11%;
+  margin-top:20%;
+  width:40%;
+  visibility: hidden;
+}
+#websiteplaatje3 {
+  position: relative;
+  left:30%;
+  margin-top:20%;
+  width:40%;
   visibility: hidden;
 }
