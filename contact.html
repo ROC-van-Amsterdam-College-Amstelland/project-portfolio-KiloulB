@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="_styling/css/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" href="_styling/active.js" ></script> -->
 
+
+</head>
+<body>
+
+  <video autoplay loop id="video-background" muted plays-inline>
+  <source src="achtergrond.webm" type="video/mp4">
+</video>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu">
+      <div class="container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-bobba">OPEN MENU <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+      </div>
+      <div class="collapse navbar-collapse" id="menu-bobba">
+      <ul class="nav navbar-nav">
+      <li class="dropdown">
+      <a href="index.html" style="margin-left:400px;"><i class="fa fa-user" aria-hidden="true"></i>Home</a>
+      </li>
+      <li class="dropdown">
+      <a href="over-mij.html" ></i> Over Mij</a>
+      </li>
+      <li class="dropdown">
+      <a href="projecten.html"></i> Projecten</a>
+      </li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cloud" aria-hidden="true"></i> Meer</a>
+      <ul class="dropdown-menu" role="menu">
+      <li><a href="vaardigheden.html">Vaardigheden</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+      </ul>
+      </nav>
+    </header>
+    <h1><b>Contact</b><br><p>Om contact met mij op te nemen, kunt u mij een e-mail sturen via de onderstaande knop.<br></p></h1>
+    <a id="knop" class="btn btn-danger" HREF="mailto:kiloulb@gmail.com">Stuur mij een e-mail</a>
+    <a href="#" onclick="clickCounter()">
+    <img src="_styling/img/like.png" class="like">
+    <p class="like" style="top:77%;"><a id="result"></a></p>
+
+    <center>
+<footer>
+Made by Bilal Kiloul with ❤</footer>
+
+  <script>
+document.getElementById("result").innerHTML = localStorage.clickcount + " likes";
+
+  function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("result").innerHTML = localStorage.clickcount + " likes";
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+  }
+  </script>
+</body>
+</html>

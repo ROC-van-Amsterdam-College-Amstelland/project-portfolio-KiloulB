@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>KiloulB &bull; Over mij.</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -16,7 +16,10 @@
   <script>
   $(document).ready(function(){
     document.getElementById("tekst").style.display = "none";
+    document.getElementById("plaatjehobbys").style.display = "none";
     $("#hobbys").click(function(){
+      document.getElementById("plaatjehobbys").style.display = "block";
+      document.getElementById("plaatje").style.display = "none";
       $("h1").fadeOut(300);
       $("#hobbys").fadeOut(500);
       $("#menu").fadeIn();
@@ -28,7 +31,7 @@
 <body>
 
 
-    <h1><b>Over Mij</b><br><p>Mijn naam is Bilal Kiloul, ik ben 16 jaar oud en ik ben een Front-End Developer<br> dat woont in Amsterdam.
+    <h1><b>Over Mij</b><br><p>Mijn naam is Bilal Kiloul, ik ben 16 jaar oud en ik ben een Front-End Developer<br> woonachtig in Amsterdam.
     Momenteel zit ik op het ROC Amstelland, ik doe de opleiding<br> Applicatieontwikkelaar. En ik heb momenteel meerdere websites gemaakt, <br> die websites kun je vinden door boven op 'Projecten' te klikken of door <a href="projecten.html">hier te klikken </a></p></h1>
 <div id="tekst"><b>Mijn Hobby's</b><p style="font-size:14px;"><br>Mijn hobby's zijn voetballen, kickboksen & coderen. Als ik iets niet begrijp<br> met coderen gebruik ik onder andere stackoverflow.<br>Klik <a href="https://stackoverflow.com">HIER</a> om naar Stackoverflow te gaan.</p></div>
 
@@ -58,6 +61,7 @@
       <ul class="dropdown-menu" role="menu">
       <li><a href="vaardigheden.html">Vaardigheden</a></li>
             <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
 
       </ul>
@@ -65,7 +69,8 @@
     </header>
     <button id="hobbys" class="btn btn-primary"><b>Mijn hobby's</b></button>
     <center>
-    <img src="_styling/img/foto.jfif" class="plaatje"></center>
+    <img src="_styling/img/foto.jfif" id="plaatje"></center>
+    <img src="_styling/img/kickboks.png" id="plaatjehobbys"></center>
 <footer>
 Made by Bilal Kiloul with ❤</footer>
 

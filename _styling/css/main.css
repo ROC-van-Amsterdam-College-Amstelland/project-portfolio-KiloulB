@@ -139,7 +139,20 @@ footer{
        animation: fadein 2s;
 }
 
-.plaatje {
+#plaatje {
+  position: fixed;
+  top:30%;
+  left:70%;
+  height:350px;
+  border-radius: 150px;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+   -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+       animation: fadein 2s;
+}
+
+#plaatjehobbys {
   position: fixed;
   top:30%;
   left:70%;
@@ -202,6 +215,27 @@ footer{
   display:block;
   top:60%;
   left:47%;
+  position: absolute;
+   z-index:999;
+}
+
+#icons {
+  display:inline-block;
+}
+
+.iconimg {
+  position: relative;
+  width:50px;
+  left:500px;
+  top:60%;
+}
+
+.like {
+  width:50px;
+  height:50px;
+  display:block;
+  top:70%;
+  left:48%;
   position: absolute;
    z-index:999;
 }
