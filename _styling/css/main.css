@@ -190,6 +190,7 @@ footer{
 }
 
 #websiteplaatje1 {
+  border-radius: 5%;
   position: relative;
   left:30%;
   margin-top:20%;
@@ -197,6 +198,7 @@ footer{
   visibility: hidden;
 }
 #websiteplaatje2 {
+  border-radius: 5%;
   position: relative;
   left:-11%;
   margin-top:20%;
@@ -213,7 +215,7 @@ footer{
 
 #hobbys {
   display:block;
-  top:60%;
+  top:56%;
   left:47%;
   position: absolute;
    z-index:999;
@@ -238,4 +240,8 @@ footer{
   left:48%;
   position: absolute;
    z-index:999;
+}
+
+#GFG {
+  font-size:11px;
 }

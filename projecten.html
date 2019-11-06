@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>KiloulB &bull; Projecten</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -13,74 +13,106 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script type="text/javascript" href="_styling/active.js" ></script> -->
 
-  <script>
-  $(document).ready(function(){
-    $("#website1").click(function(){
-      document.getElementById("websiteplaatje1").style.visibility = "visible";
-      document.getElementById("websiteplaatje2").style.visibility = "hidden";
-      document.getElementById("websiteplaatje3").style.visibility = "hidden";
-      // $("h1").fadeOut(300);
-      // $("#knop").fadeOut(500);
-      // $("#menu").fadeIn();
-      // $("#tekst").fadeIn();
-    });
-  });
-  </script>
-  <script>
-  $(document).ready(function(){
-    $("#website2").click(function(){
-      document.getElementById("websiteplaatje1").style.visibility = "hidden";
-      document.getElementById("websiteplaatje2").style.visibility = "visible";
-
-      // $("h1").fadeOut(300);
-      // $("#knop").fadeOut(500);
-      // $("#menu").fadeIn();
-      // $("#tekst").fadeIn();
-    });
-  });
-  </script>
 </head>
 <body>
-    <h1 style="top:20%"><b>Projecten</b><br><span style="font-size:15px;">Ik heb afgelopen jaren aan vele website lay-outs gewerkt. Om mijn gemaakte websites te zien, klik hieronder op de buttons.</span></h1>
 
-  <video autoplay loop id="video-background" muted plays-inline>
-  <source src="achtergrond.webm" type="video/mp4"> 
-</video>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu">
-      <div class="container">
-      <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-bobba">OPEN MENU <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-      </div>
-      <div class="collapse navbar-collapse" id="menu-bobba">
-      <ul class="nav navbar-nav">
-      <li class="dropdown">
-      <a href="index.html" style="margin-left:400px;"><i class="fa fa-user" aria-hidden="true"></i>Home</a>
-      </li>
-      <li class="dropdown">
-      <a href="over-mij.html" ></i> Over Mij</a>
-      </li>
-      <li class="dropdown">
-      <a href="projecten.html"></i> Projecten</a>
-      </li>
-      <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cloud" aria-hidden="true"></i> Meer</a>
-      <ul class="dropdown-menu" role="menu">
-      <li><a href="vaardigheden.html">Vaardigheden</a></li>
-            <li><a href="nieuws.html">Nieuws</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <video autoplay loop id="video-background" muted plays-inline>
+      <source src="achtergrond.webm" type="video/mp4">
+      </video>
+
+        <h1 style="top:20%"><b>Projecten</b>
+          <br><span style="font-size:15px;">Ik heb afgelopen jaren aan vele website lay-outs gewerkt. Om mijn gemaakte websites te zien, klik hieronder op de buttons.</span></h1>
 
 
-      </ul>
-      </nav>
-    </header>
-    <button id="website1" class="btn btn-danger"><b>Website 1</b></button>
-    <button id="website2" class="btn btn-warning"><b>Website 2</b></button>
-    <img id="websiteplaatje1" src="_styling/img/website1.png" alt="" />
-    <img id="websiteplaatje2" src="_styling/img/website2.png" alt="" />
+          <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-bobba" style="color:red">OPEN MENU <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                </div>
+            <div class="collapse navbar-collapse" id="menu-bobba">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="index.html" style="margin-left:350px;"><i class="fa fa-user" aria-hidden="true"></i>Home</a>
+                </li>
+                <li class="dropdown">
+                  <a href="over-mij.html" ></i> Over Mij</a>
+                </li>
+                <li class="dropdown">
+                  <a href="projecten.html"></i> Projecten</a>
+                </li>
+                <li class="dropdown">
+                  <a href="vaardigheden.html"></i> Vaardigheden</a>
+                </li>
+                <li class="dropdown">
+                  <a href="contact.html"></i> Contact</a>
+                </li>
+              </ul>
+              </nav>
+            </header>
 
-<footer>
-Made by Bilal Kiloul with ❤</footer>
 
+          <button id="website1" class="btn btn-danger"><b>Website 1</b></button>
+            <button id="website2" class="btn btn-warning"><b>Website 2</b></button>
+              <img id="websiteplaatje1" src="_styling/img/website1.png" alt="" />
+                <img id="websiteplaatje2" src="_styling/img/website2.png" alt="" />
+
+
+          <footer>
+            Made by Bilal Kiloul with <a style="color:red;text-decoration:none;">❤</a><br>
+              <p id="GFG" ></p>
+                <a href="https://github.com/KiloulB">
+                    <img src="_styling/img/githubicon.png" style="width:40px;"></a>
+                  </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    $(document).ready(function(){
+      $("#website1").click(function(){
+        document.getElementById("websiteplaatje1").style.visibility = "visible";
+        document.getElementById("websiteplaatje2").style.visibility = "hidden";
+        document.getElementById("websiteplaatje3").style.visibility = "hidden";
+        // $("h1").fadeOut(300);
+        // $("#knop").fadeOut(500);
+        // $("#menu").fadeIn();
+        // $("#tekst").fadeIn();
+      });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+      $("#website2").click(function(){
+        document.getElementById("websiteplaatje1").style.visibility = "hidden";
+        document.getElementById("websiteplaatje2").style.visibility = "visible";
+
+        // $("h1").fadeOut(300);
+        // $("#knop").fadeOut(500);
+        // $("#menu").fadeIn();
+        // $("#tekst").fadeIn();
+      });
+    });
+    </script>
+    <script>
+
+    var d = new Date();
+
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+
+    var output = "" + ((''+day).length<2 ? '0' : '') + day + '-' +
+        ((''+month).length<2 ? '0' : '') + month + '-' +
+        d.getFullYear() + '';
+
+        document.getElementById("GFG").innerHTML   = (output);
+    </script>
 </body>
 </html>
